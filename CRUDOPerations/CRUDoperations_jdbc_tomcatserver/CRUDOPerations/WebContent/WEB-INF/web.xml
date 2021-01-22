@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>CRUDOPerations</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  
+  <servlet>
+    <servlet-name>view</servlet-name>
+    <servlet-class>in.apcfss.controller.ViewEmployees</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>view</servlet-name>
+    <url-pattern>/viewEmployee</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>add</servlet-name>
+    <servlet-class>in.apcfss.controller.AddEmployee</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>add</servlet-name>
+    <url-pattern>/addEmployee</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <servlet-name>delete</servlet-name>
+    <servlet-class>in.apcfss.controller.DeleteEmployee</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>delete</servlet-name>
+    <url-pattern>/deleteEmployee</url-pattern>
+  </servlet-mapping>
+
+      <servlet>
+    <servlet-name>update</servlet-name>
+    <servlet-class>in.apcfss.controller.UpdateEmployee</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>update</servlet-name>
+    <url-pattern>/updateemp</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
